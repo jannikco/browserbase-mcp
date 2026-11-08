@@ -1,21 +1,38 @@
 {
   "name": "browserbase-mcp",
-  "version": "0.2.0",
-  "description": "Inspect existing sessions, approve creation only if needed, then request release of the returned session ID and inspect its final state. Actual browser driving requires a separate CDP client.",
+  "version": "1.0.0",
   "type": "module",
   "license": "MIT",
+  "description": "Use Browserbase with AI agents through one PipMCP API key, actual hosted schemas and governed execution.",
   "engines": {
     "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.mjs"
+    }
   },
   "bin": {
     "browserbase-mcp": "server.mjs"
   },
   "scripts": {
     "start": "node example.mjs",
+    "doctor": "node doctor.mjs",
     "server": "node server.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/server": "2.4.0"
-  }
+  },
+  "files": [
+    "lib",
+    "server.mjs",
+    "doctor.mjs",
+    "example.mjs",
+    "README.md",
+    "LICENSE",
+    "capabilities.json",
+    "docs"
+  ]
 }

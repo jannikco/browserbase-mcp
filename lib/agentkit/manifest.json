@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-browserbase",
+      "description": "Connect AI agents to Browserbase using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-browserbase/SKILL.md": "0ce1d4c0db0426247d301f80b9f9907a836227d10559deaa4fd16d686af0c27c"
+  }
+}
